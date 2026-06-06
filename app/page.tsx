@@ -3,21 +3,48 @@ import FeatureCard from "@/components/FeatureCard";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
+const svgProps = {
+  width: 32,
+  height: 32,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  strokeWidth: 2,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+  "aria-hidden": true,
+};
+
 const features = [
   {
-    icon: "📝",
+    icon: (
+      <svg {...svgProps} stroke="#FACC15">
+        <path d="M13 2 3 14h9l-1 8 10-12h-9z" />
+      </svg>
+    ),
+    iconWrapperClassName: "shadow-[0_0_18px_rgba(250,204,21,0.45)]",
     title: "Quick quiz",
     description:
       "Answer a handful of simple questions about your interests, skills, and goals. No sign-up required.",
   },
   {
-    icon: "🎯",
+    icon: (
+      <svg {...svgProps} stroke="#60A5FA">
+        <circle cx="12" cy="12" r="10" />
+        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+      </svg>
+    ),
+    iconWrapperClassName: "shadow-[0_0_18px_rgba(96,165,250,0.45)]",
     title: "Personalized match",
     description:
       "Get a career direction tailored to your answers, with a clear explanation of why it fits you.",
   },
   {
-    icon: "🗺️",
+    icon: (
+      <svg {...svgProps} stroke="#34D399">
+        <polygon points="3 11 22 2 13 21 11 13 3 11" />
+      </svg>
+    ),
+    iconWrapperClassName: "shadow-[0_0_18px_rgba(52,211,153,0.45)]",
     title: "Step-by-step roadmap",
     description:
       "Follow a practical roadmap with the skills and milestones to reach your next career move.",

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CareerPath — Find your next career move",
+  title: "CareerGPS — Find Your Tech Career Path",
   description:
-    "Take a short quiz and get a personalized career path with a step-by-step roadmap.",
+    "Answer a short quiz and get a personalized tech career roadmap from beginner to internship-ready.",
 };
 
 export default function RootLayout({
